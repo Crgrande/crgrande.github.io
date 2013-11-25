@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<style type="text/css">
+	body {background-color:blue;
+		color:white;
+		width: 100%;}
+
+	.myContainer{font-family:Arial, sans-serif;
+		font-size:16px;
+		line-height: 100%;
+		padding: 40px 20px 40px 20px;}
+
+	.myTable{border-collapse:collapse;
+		border:0px;
+		width:400px;
+		}
+
+	.genericRow{padding: 0px 10px 0px 10px;}
+
+	.genericCell{padding: 5px;}
+
+	.myUnorderedList{list-style-type: none;}
+	</style>
+	<script type="text/javascript">
+	function displayCommentsOnPage()
+	{var commentsUpdate = document.getElementById('userComments').value;
+	document.getElementById('commentUpdate').innerHTML=commentsUpdate;}
+	</script>
+</head>
+
+<body>
+
+
+<div align="center" class="myContainer">
+<table class="myTable">
+	<tr class="genericRow">
+		<td class="genericCell">Hi there, my name is Chris Grande</td>
+		<td class="genericCell">This is a picture of me:  
+			<img src="\profile.jpg" />
+		</td>
+	</tr>
+	<tr class="genericRow">
+		<td class="genericCell">I'm an MIS major at Wright State</td>
+		<td class="genericCell">This webpage is a really bad example of formatting</td>
+	</tr>
+</table>
+</div>
+
+<div align="center" class="myContainer">
+	<ul class="myUnorderedList">
+		<li>This is list item 1</li>
+		<li>This is list item 2</li>
+		<li>This is list item 3</li>
+	</ul>
+</div>
+
+<div align="center" class="myContainer">
+	
+	The section below will update to whatever text you enter in the following box. 
+	Type some text, then click the button: 
+	<input type="text" id="userComments">
+	<input type="button" onclick='displayCommentsOnPage();' value='Change Comments Section'>
+	
+</div>
+
+<div id="commentUpdate">
+Before your comment
+</div>
+
+</body>
+
+</html>
